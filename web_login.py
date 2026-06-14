@@ -4,6 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="Corporate Login System", page_icon="🏢", layout="wide")
 
 # --- 🖌️ Custom CSS เพื่อให้ทุกอย่างอยู่ตรงกลางและใหญ่ขึ้น ---
+# --- 🖌️ Custom CSS เพื่อให้ทุกอย่างอยู่ตรงกลางและใหญ่ขึ้น (แก้ไขบั๊กเรียบร้อย) ---
 st.markdown("""
     <style>
     .stTextInput > div > div > input {
@@ -17,7 +18,7 @@ st.markdown("""
         color: white !important;
     }
     </style>
-    """, unsafe_allow_stdio=True)
+    """, unsafe_allow_html=True)  # <-- เปลี่ยนเป็น html เรียบร้อยครับ!
 
 # --- 📐 จัด Layout กึ่งกลาง ---
 # ใช้ columns 3 ช่อง (สัดส่วน 1:2:1) เพื่อให้เนื้อหาหลักอยู่ในช่องกลางที่กว้างกว่า
